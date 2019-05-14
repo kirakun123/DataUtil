@@ -34,15 +34,16 @@ public class Data {
 		// IMPLEMENTAR
 		// Implemente a lógica a partir do Fluxograma dado em anexo!
 		
-		if (mes == mes.FEVEREIRO)
-			throw new IllegalAccessError("Se for fevereiro tem que passar o ano");
+		/*if (mes == mes.FEVEREIRO)
+			throw new IllegalAccessError("Se for fevereiro tem que passar o ano");*/
 		if (mes.getNumeroMes() <= 7 && mes.getNumeroMes() % 2 != 0 || mes.getNumeroMes() <= 7 && mes.getNumeroMes() % 2 != 0) {
 			System.out.println("O mês tem 31 dias");
+			return 31;
 		} else {
 			System.out.println("O mês tem 30 dias");
+			return 30;
 		}
 
-		return 0;
 	}
 
 	/**

@@ -1,5 +1,7 @@
 package es.cliente.datautil;
 import java.util.Scanner;
+import es.datautil.Meses;
+import es.datautil.*;
 
 public class Principal {
 
@@ -26,7 +28,21 @@ public class Principal {
 		
 	    */ 
 		
-		Scanner mes = new Scanner(System.in);
+		Scanner ler = new Scanner(System.in);
+		int diames = ler.nextInt();
+		Meses mes = Meses.mesFromInt(diames);
+		int dias = Data.diasMes(mes);
+		if(mes.getNumeroMes() == 2) {
+			System.out.println("Digite o ano");
+			int ano = ler.nextInt();
+			Data.diasMes(mes, ano);
+			System.out.println("Ano: " + ano + " Mes: " + mes + " Dias: " + dias);
+		}
+		else
+		{
+			
+		}
+		
 		
 		
 		
