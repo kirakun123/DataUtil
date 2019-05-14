@@ -1,4 +1,5 @@
 package es.cliente.datautil;
+import java.util.Scanner;
 
 public class Principal {
 
@@ -24,6 +25,8 @@ public class Principal {
 		   
 		
 	    */ 
+		
+		Scanner mes = new Scanner(System.in);
 		
 		
 		
